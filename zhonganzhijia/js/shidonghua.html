@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 600px;
+				height: 300px;
+				border: 1px solid red;
+			}
+			.donghua1{
+				width: 500px;
+				height: 200px;
+				background-image: url(../img/banner01.png);
+				background-size: 100% 100%;
+				animation: donghua01 10s 0s infinite;
+			}
+			.donghua1:hover{
+				animation-play-state: running;
+			}
+			@keyframes donghua01{
+				0%{
+					background-image: url(../img/banner01.png);
+					background-size: 100% 100%;
+				}
+				25%{
+					background-image: url(../img/banner_04.jpg);
+					background-size: 100% 100%;
+				}
+				50%{
+					background-image: url(../img/banner01.png);
+					background-size: 100% 100%;
+				}
+				75%{
+					background-image: url(../img/banner_04.jpg);
+					background-size: 100% 100%;
+				}
+				100%{background-image: url(../img/banner01.png);
+					background-size: 100% 100%;}
+			}
+		</style>
+	</head>
+	<body>
+		<div >
+			<div class="donghua1"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+<style type="text/css">
+			*{margin: 0 auto;
+			padding: 0;}
+			div{
+				width: 600px;
+				height: 600px;
+				border: 2px solid red;
+				
+			}
+			.box1{
+				width: 50px;
+				height: 50px;
+				background-image: url(img/img3.png);
+				background-size: 100% 100%;
+				border-radius: 50%;
+				margin: 0;
+			animation:myanimation 5s  1s  infinite;
+			}
+			div:hover{
+				animation-play-state:running;
+			}
+			
+				
+			@keyframes myanimation{
+				0%{transform: translate(0px,0px) ;}
+				25%{transform: translate(550px,0px) ; 
+				background-image: url(img/img4.png);
+				background-size: 100% 100%;}
+				50%{transform: translate(550px,550px) ;
+				background-image: url(img/img5.png);
+				background-size: 100% 100%;}
+				75%{transform: translate(0px,550px) ;}
+				100%{transform: translate(0px,0px) ;}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="box1"></div>
+		</div>
+	</body>
+</html>
